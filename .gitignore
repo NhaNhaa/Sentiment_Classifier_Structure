@@ -1,0 +1,136 @@
+# =============================================================================
+# SENSITIVE DATA & ENVIRONMENT FILES
+# =============================================================================
+
+# Environment variables and secrets (NEVER commit these)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+credentials.json
+token.json
+.aws/
+gcp-credentials.json
+
+# =============================================================================
+# LARGE MODEL ARTIFACTS & DATA (Hundreds of MB to GB)
+# =============================================================================
+
+# Saved model files and checkpoints
+models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.tflite
+
+# Hugging Face cache and downloads
+data/cache/
+data/processed/
+~/.cache/huggingface/
+~/.cache/torch/
+transformers_cache/
+pretrained_models/
+
+# Dataset storage (IMDB is downloaded fresh)
+*.csv.gz
+*.tar.gz
+*.zip
+*.7z
+
+# =============================================================================
+# VIRTUAL ENVIRONMENT (Already created, don't commit)
+# =============================================================================
+
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =============================================================================
+# PYTHON CACHE & BUILD ARTIFACTS
+# =============================================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# =============================================================================
+# TESTING & COVERAGE
+# =============================================================================
+
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# =============================================================================
+# IDES & EDITORS
+# =============================================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# JUPYTER NOTEBOOKS
+# =============================================================================
+
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.ipynb_metadata
+
+# =============================================================================
+# LOGS & RESULTS (Generated during runs)
+# ==============================================================================
+
+*.log
+logs/
+results/*.json
+results/*.png
+results/*.html
+mlruns/
+wandb/

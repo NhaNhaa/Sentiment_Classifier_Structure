@@ -1,22 +1,27 @@
 
 ```
 Sentiment_Classifier_Structure
-├─ .env
 ├─ app.py
 ├─ baseline_model.py
 ├─ config.py
 ├─ data
-│  └─ cache
+│  └─ __init__.py
 ├─ data_loader.py
 ├─ Dockerfile
 ├─ evaluator.py
 ├─ explainer.py
 ├─ MLflow.md
-├─ models
 ├─ notebooks
-│  └─ demo_explainability.ipynb
+│  ├─ demo_explainability.ipynb
+│  └─ __init__.py
 ├─ README.md
 ├─ requirements.txt
-└─ transformer_model.py
+├─ test
+│  ├─ conftest.py
+│  ├─ test_config.py
+│  ├─ test_data_loader.py
+│  └─ __init__.py
+├─ transformer_model.py
+└─ __init__.py
 
 ```
