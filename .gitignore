@@ -53,6 +53,7 @@ data/*.csv                # optional: ignore any raw data files
 # =============================================================================
 
 venv/
+venv
 env/
 ENV/
 .venv/
@@ -149,3 +150,18 @@ wandb/
 *.faiss
 # Temporary embeddings or cached vectors
 embeddings/
+
+# Fine‑tuned model (obsolete – no longer used)
+fine_tuned_distilbert/
+*.safetensors
+*.bin
+
+# CSV datasets (not needed for the app)
+*.csv
+sentiment_training_data*.csv
+
+# JSON data files (if you still have the raw Kaggle files)
+sentiment_dataset_*.json
+
+# Any ZIP files
+*.zipvenv/
